@@ -563,6 +563,14 @@ body {
         flex-direction: column;
         gap: 40px;
         padding: 80px 0;
+        .hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%;
+}
     }
 
     .hero-text h1,
