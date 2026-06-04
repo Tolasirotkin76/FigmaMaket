@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remmy</title>
+    <link rel="stylesheet" href="css/style.css">
+     <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/" class="logo">Remmy</a>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Для пациентов</a></li>
+                <li><a href="#">Для врачей</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn btn-header">Скачать</button>
+
+        <!-- Бургер для мобильной версии -->
+        <button class="burger" id="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#" onclick="closeMobileMenu()">Для пациентов</a></li>
+            <li><a href="#" onclick="closeMobileMenu()">Для врачей</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero container">
+        <div class="hero-text">
+            <h1>
+                Получите ответы на все вопросы,
+                необходимые для здоровья кожи.
+            </h1>
+
+            <p>
+                Remmy помогает вам найти наиболее эффективные
+                средства по уходу за кожей, позволяя тестировать
+                и отслеживать продукты вместе с другими людьми.
+            </p>
+
+            <div class="form-box">
+                <input type="text" placeholder="Введите Имя...">
+                <div class="email-row">
+                    <input type="email" placeholder="Введите почту...">
+                    <button class="btn">Получить приглашение</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="img/girl.png" alt="Девушка, использующая Remmy">
+        </div>
+    </section>
+
+    <!-- SECTION — Биохакинг -->
+    <section class="section container">
+        <div class="phone">
+            <img src="img/app.png" alt="Приложение Remmy">
+        </div>
+
+        <div class="content">
+            <h2>Протестируйте средства по уходу за кожей на других людях.</h2>
+
+            <p>
+                С помощью социального биохакинга вы можете установить
+                значимые связи с людьми, страдающими от тех же кожных
+                заболеваний, что и вы.
+            </p>
+
+            <p>
+                Вы сможете объединиться, чтобы проверить эффективность различных методов лечения и средств, а также
+                помочь другим, поделившись своими открытиями, сделанными в ходе собственного уникального пути к здоровью
+                кожи.
+            </p>
+        </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="steps container">
+        <h2>
+            Откройте для себя новые варианты лечения
+            с помощью социального биохакинга.
+        </h2>
+
+        <div class="step-list">
+            <!-- Шаг 1 -->
+            <div class="step-item">
+                <div class="step-content">
+                    <div class="circle">1</div>
+                    <h3>Отслеживание состояния</h3>
+                    <p>Начните с того, что используйте Remmy для отслеживания динамики состояния вашей кожи с течением
+                        времени. Это поможет установить базовый уровень, на основе которого наш алгоритм сможет
+                        рассчитать эффективность вашего лечения.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/image3.png" alt="Отслеживание состояния кожи">
+                </div>
+            </div>
+
+            <!-- Шаг 2 -->
+            <div class="step-item">
+                <div class="step-content">
+                    <div class="circle">2</div>
+                    <h3>Присоединяйтесь к лечению</h3>
+                    <p>Присоединяйтесь к сеансу биохакинга, следуя инструкциям, участвуя в обсуждении и отмечая каждый
+                        проведенный сеанс в Remmy. После этого мы сможем рассчитать средний показатель эффективности для
+                        всех участников сеанса.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/image2.png" alt="Присоединение к лечению">
+                </div>
+            </div>
+
+            <!-- Шаг 3 -->
+            <div class="step-item">
+                <div class="step-content">
+                    <div class="circle">3</div>
+                    <h3>Помощь другим</h3>
+                    <p>Помогите другим найти облегчение и исцеление, поделившись экспериментами и методами биохакинга,
+                        которые помогли вам. Затем обсудите, пообщайтесь и сотрудничайте, чтобы выяснить, как
+                        максимально повысить эффективность ваших методов лечения.</p>
+                </div>
+                <div class="step-image">
+                    <img src="img/image1.png" alt="Помощь другим">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRACKING -->
+    <section class="section container">
+        <div class="phone">
+            <img src="img/image3.png" alt="Отслеживание улучшений">
+        </div>
+
+        <div class="content">
+            <h2>Отслеживайте свои улучшения</h2>
+
+            <p>
+                Remmy помогает людям отслеживать состояние своей кожи с течением времени, чтобы вы лучше понимали, что
+                помогает вашей коже, а что ухудшает ее.
+            </p>
+
+            <p>
+                Это стало возможным благодаря нашему запатентованному алгоритму, который не только отслеживает ваше
+                состояние, но и измеряет эффективность различных методов лечения и продуктов, которые вы используете в
+                данный момент.
+            </p>
+        </div>
+    </section>
+
+    <!-- TREATMENT -->
+    <section class="section container">
+        <div class="content">
+            <span class="small-title">Лечение</span>
+            <h2>Найдите действительно эффективные методы лечения.</h2>
+            <p>Получите доступ к уже проверенным методам лечения псориаза, экземы, акне и многих других кожных заболеваний.</p>
+            <p>Ремми помогает людям находить наиболее эффективные методы лечения, средства и продукты, чтобы вы не тратили время и деньги на то, что не работает.</p>
+        </div>
+        <div class="phone treatment-phone">
+            <img src="img/Treatment.png" alt="Интерфейс лечения">
+        </div>
+    </section>
+
+    <!-- SUPPORT -->
+    <section class="section container">
+        <div class="phone">
+            <img src="img/Support.png" alt="Поддержка сообщества">
+        </div>
+        <div class="content">
+            <span class="small-title">Поддержка</span>
+            <h2>Сообщество экспертов по уходу за кожей, которые всегда готовы вам помочь.</h2>
+            <p>Проблемы со здоровьем кожи могут быть очень сложными и изнурительными.</p>
+            <p>Изолированность, будь то рубцы, морщины или экзема. С Ремми вам не придется справляться с этим в одиночку.</p>
+            <div class="support-features">
+                <div class="support-feature">
+                    <img src="img/Frame.png" alt="Мониторинг" class="feature-icon">
+                    <span>Мониторинг научных исследований</span>
+                </div>
+                <div class="support-feature">
+                    <img src="img/Frame(1).png" alt="Открытие новых методов" class="feature-icon">
+                    <span>Открытие новых методов лечения</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONDITIONS -->
+    <section class="conditions container">
+        <span class="small-title">Условия</span>
+
+        <h2>Какие кожные заболевания вы лечите?</h2>
+
+        <p>
+            Независимо от того, боретесь ли вы с хроническим
+            заболеванием или последствиями старения.
+        </p>
+
+        <div class="cards">
+            <div class="card card-blue"><span class="card-plus plus-blue">+</span><span class="card-text">Акне</span></div>
+            <div class="card card-blue2"><span class="card-plus plus-blue2">+</span><span class="card-text">Псориаз</span></div>
+            <div class="card card-purple"><span class="card-plus plus-purple">+</span><span class="card-text">Экзема</span></div>
+            <div class="card card-pink"><span class="card-plus plus-pink">+</span><span class="card-text">Сухая кожа</span></div>
+            <div class="card card-orange"><span class="card-plus plus-orange">+</span><span class="card-text">Розацеа</span></div>
+            <div class="card card-peach"><span class="card-plus plus-peach">+</span><span class="card-text">Морщины</span></div>
+            <div class="card card-yellow"><span class="card-plus plus-yellow">+</span><span class="card-text">Кератоз</span></div>
+            <div class="card card-green"><span class="card-plus plus-green">+</span><span class="card-text">Растяжки</span></div>
+            <div class="card card-teal"><span class="card-plus plus-teal">+</span><span class="card-text">Паучьи вены</span></div>
+            <div class="card card-gray large"><span class="card-plus plus-gray">+</span><span class="card-text">И ещё много других условий...</span></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+        <div class="footer-left">
+            <p>Авторские права принадлежат Ремми,</p>
+            <p>2026 год, все права защищены.</p>
+            <p>Этот сайт защищён системой reCAPTCHA и Google.</p>
+            <p><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p>
+        </div>
+
+        <nav class="footer-links">
+            <ul>
+                <li><a href="#">Условия</a></li>
+                <li><a href="#">Конфиденциальность</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    
+
+</body>
+
+</html>
